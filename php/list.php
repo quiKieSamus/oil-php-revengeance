@@ -17,12 +17,18 @@ if(mysqli_num_rows($result) > 0) {
                 <th>Eliminar</th>
                 <th>Ver</th>
             </tr>
+
             <tr>
-            <td>$row[id]</td>
-            <td>$row[nombre]</td>
-            <td>$row[presion]psi</td>
-            <td><img src='../img/download.png' width='10' height='10'></td>
-            <td><input type='radio'></td>
+                <form action='erase.php' method='get'>
+                    <td><input type='text' value='$row[id]' name='id' readonly></td>
+                    
+                    <td><input type='text' name='name' value='$row[nombre]' readonly></td>
+                    
+                    <td><input type='text' name='presion' value='$row[presion]' readonly>psi</td>
+                    <td><input type='submit' value='eliminar'></td>
+                    
+                </form>
+                <td><input type='radio'></td>
             </tr>
         
         </table>";

@@ -14,9 +14,19 @@ $pressure = $_GET['pressure'];
 
 $query = "INSERT INTO pozo (nombre, presion) VALUES ('$name', '$pressure')";
 
-$result = mysqli_query($conn, $query);
+if(isset($name) && isset($pressure)) {
+    $result = mysqli_query($conn, $query);
 
-echo '<a href="list.php">Ver pozos</a>';
+    echo "Añadido satisfactoriamente a la base de datos";
+    
+    echo '<a href="list.php">Ver pozos</a>';
+
+} else {
+    echo "papi dejate de mariqueras";
+}
+
+
+
 
 mysqli_close($conn);
 ?>
