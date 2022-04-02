@@ -14,6 +14,7 @@ if(mysqli_num_rows($result) > 0) {
                 <th>ID</th>
                 <th>Nombre</th>
                 <th>Presión</th>
+                <th>Tiempo de medición</th>
                 <th>Eliminar</th>
                 <th>Ver</th>
             </tr>
@@ -25,6 +26,8 @@ if(mysqli_num_rows($result) > 0) {
                     <td><input type='text' name='name' value='$row[nombre]' readonly></td>
                     
                     <td><input type='text' name='presion' value='$row[presion]' readonly>psi</td>
+
+                    <td><input type='text' name='time' value='$row[tiempo]' readonly></td>
                     <td><input type='submit' value='eliminar'></td>
                     
                 </form>
@@ -40,5 +43,7 @@ if(mysqli_num_rows($result) > 0) {
 }
 
 
-
 ?>
+
+<a href="../add.html">Añadir pozo</a>
+<a href="../index.html">Inicio</a>

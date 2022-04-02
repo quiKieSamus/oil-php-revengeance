@@ -8,14 +8,20 @@
 </head>
 <body>
     <form action="php/add.php" method="get">
+
         <div>
             <label for="name">Nombre</label>
-            <input type="text" name="name" require>
+            <input type="text" name="name" required>
         </div>
 
         <div>
             <label for="pressure">Presión</label>
-            <input type="text" name="pressure" require>
+            <input type="text" name="pressure" required>
+        </div>
+
+        <div>
+            <label for="time">Tiempo de medición</label>
+            <input type="text" name="time" required>
         </div>
 
         <input type="submit" value="Añadir">

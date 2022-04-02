@@ -4,6 +4,7 @@ include("config.php");
 
 $name = $_GET['name'];
 $pressure = $_GET['pressure'];
+$time = $_GET['time'];
 
 
 /*if(!$conn) {
@@ -12,7 +13,7 @@ $pressure = $_GET['pressure'];
     echo "conexion exitosa";
 }*/
 
-$query = "INSERT INTO pozo (nombre, presion) VALUES ('$name', '$pressure')";
+$query = "INSERT INTO pozo (nombre, presion, tiempo) VALUES ('$name', '$pressure', '$time')";
 
 if(isset($name) && isset($pressure)) {
     $result = mysqli_query($conn, $query);
