@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+}
+
+.data{
+    border: black 0.3px solid;
+}
+
+.field {
+    margin: 10px auto;
+    border: none;
+}
+
+.pressure {
+    width: 35px;
+    margin-left: 5px;
+}
+
+.deleteBtn {
+    color: red;
+}
+
+.linkContainer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.link {
+    color: white;
+    border: black 1px solid;
+    border-radius: 10px;
+    background-color: black;
+    text-decoration: none;
+    padding: 20px 35px;
+}
+
+.link:hover {
+    transition: 0.5s;
+    color: red;
+    border: red 1px solid;
+}
+
+/* add.html style */
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.linkContainerA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .submitBtn {
+    margin: auto 200px;
+} */

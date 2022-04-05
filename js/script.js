@@ -16,13 +16,13 @@ new Chart("graphics", {
        }]
      },
      options: {
-       legend: {display: false},
+       legend: {display: true},
        scales: {
          yAxes: [{ticks: {min: 6, max:16}}]
        }
      }
  });
- 
+
 for(let i = 0; i < form.length; i++){
   console.log(i);
   let presion;

@@ -5,26 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Añadir</title>
+    <link rel="stylesheet" href="css/list.css" type="text/css">
 </head>
 <body>
     <form action="php/add.php" method="get">
-
-        <div>
-            <label for="name">Nombre</label>
-            <input type="text" name="name" required>
+        <div class="form-container">
+            <div class="field">
+                <label for="name">Nombre</label> <br>
+                <input type="text" name="name" id="name">
+            </div>
+    
+            <div class="field">
+                <label for="pressure">Presión (PSI)</label> <br>
+                <input type="text" name="pressure" id="pressure">
+            </div>
+    
+            <div class="field">
+                <label for="time">Tiempo de medición</label> <br>
+                <input type="text" name="time" id="time"> <br>
+            </div>
         </div>
+        <input type="submit" value="enviar">
 
-        <div>
-            <label for="pressure">Presión</label>
-            <input type="text" name="pressure" required>
-        </div>
-
-        <div>
-            <label for="time">Tiempo de medición</label>
-            <input type="text" name="time" required>
-        </div>
-
-        <input type="submit" value="Añadir">
     </form>
+    
+    <div class="linkContainerA">
+        <a href="index.html" class="link" style="margin-bottom: 10px;">Inicio</a>
+        <a href="php/list.php" class="link">Ver pozo</a>
+    </div>
+    <!-- <script src="js/validations.js"></script> -->
 </body>
 </html>
